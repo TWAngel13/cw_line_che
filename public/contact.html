@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Линия_Че</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" href="images/logo.png">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/map.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+	<script src="libs/jquery/jquery-3.6.0.min.js" defer></script>
+	<script src="js/common.js" defer></script>
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=2614103a-726d-4a5b-b21e-8309529cf60f" type="text/javascript"></script>
+    <script src="js/contact.js" type="module"></script>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container-fluid align-items-sm-start">
+				<a href="./index.html" class="navbar-brand">
+					<img class="navbar-logo" src="images/logo.png">
+				</a>
+				<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse py-lg-3" id="navbarCollapse">
+					<div class="navbar-nav ms-auto">
+                        <a href="./index.html#main" class="nav-item nav-link">ГЛАВНАЯ</a>
+                    </div>
+                    <div class="navbar-nav ms-auto">
+                        <a href="./index.html#about" class="nav-item nav-link">О&nbsp;НАС</a>
+                    </div>
+                    <div class="navbar-nav ms-auto">
+                        <a href="./map.html#route" class="nav-item nav-link">МАРШРУТЫ</a>
+                    </div>
+                    <div class="navbar-nav ms-auto">
+                        <a href="./objects.html#objects" class="nav-item nav-link">ОБЪЕКТЫ</a>
+                    </div>
+                    <div class="navbar-nav ms-auto">
+                        <a href="./contact.html#apply" class="nav-item nav-link">ЗАПИСАТЬСЯ</a>
+                    </div>
+                    <div class="navbar-nav ms-auto">
+                        <a href="./index.html#contact" class="nav-item nav-link">КОНТАКТЫ</a>
+                    </div>
+				</div>
+			</div>
+		</nav>
+	</header>
+    <div id="apply" class="scr-end">
+        <div class="row" style="flex: 0 1 auto;">
+            <div class="scr-end-title">ЗАПИСАТЬСЯ</div>
+        </div>
+        <div class="row" style="flex: 0 1 auto;">
+            <div class="scr-end-text">
+                Хотите ближе познакомиться с достопримечательностями Челябинска?<br>
+                Тогда закажите у нас экскурсию по одному из маршрутов Линии Че с профессиональным гидом!<br>
+                На Ваш выбор предлагается 4 варианта тематических экскурсий.
+            </div>
+        </div>
+        <div class="row" style="flex: 1 1 auto;">
+            <div class="col-lg-12">
+                <div class="scr-end-window">
+                    <div class="row scr-end-window-text">
+                        Как мы можем с Вами связаться? <br> Пожалуйста, оставьте свои контакты и мы ответим на все Ваши вопросы.  
+                    </div>
+                    <div class="row">
+                        <input id="nameInput" type="text" class="scr-end-window-input" placeholder="Как к Вам обращаться?">
+                    </div>
+                    <div class="row">
+                        <input id="phoneInput" type="text" class="scr-end-window-input" placeholder="Номер телефона">
+                    </div>
+                    <div class="row">
+                        <input id="emailInput" type="email" class="scr-end-window-input" placeholder="Адрес электронной почты">
+                    </div>
+                    <div class="row">
+                        <input id="routeInput" type="email" class="scr-end-window-input" placeholder="Название интересующего маршрута">
+                    </div>
+                    <div class="row scr-end-window-button-row">
+                        <button type="button" id= "orderButton" class="btn scr-end-window-button" data-bs-toggle="modal" data-bs-target="#exampleModal">Записаться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Модальное окно -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Спасибо за обращение!</h5>
+                    </div>
+                    <div class="modal-body" id="exampleModalContent">Мы скоро свяжемся с Вами.</div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn scr-end-window-button" data-bs-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

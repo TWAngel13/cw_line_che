@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Линия_Че</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" href="images/logo.png">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/map.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+	<script src="libs/jquery/jquery-3.6.0.min.js" defer></script>
+	<script src="js/common.js" defer></script>
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=2614103a-726d-4a5b-b21e-8309529cf60f" type="text/javascript"></script>
+    <script src="js/map_routes.js" type="module"></script>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container-fluid align-items-sm-start">
+				<a href="./index.html" class="navbar-brand">
+					<img class="navbar-logo" src="images/logo.png">
+				</a>
+				<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse py-lg-3" id="navbarCollapse">
+					<div class="navbar-nav ms-auto">
+                        <a href="./index.html#main" class="nav-item nav-link">ГЛАВНАЯ</a>
+                    </div>
+                    <div class="navbar-nav ms-auto">
+                        <a href="./index.html#about" class="nav-item nav-link">О&nbsp;НАС</a>
+                    </div>
+                    <div class="navbar-nav ms-auto">
+                        <a href="./map.html#route" class="nav-item nav-link">МАРШРУТЫ</a>
+                    </div>
+                    <div class="navbar-nav ms-auto">
+                        <a href="./objects.html#objects" class="nav-item nav-link">ОБЪЕКТЫ</a>
+                    </div>
+                    <div class="navbar-nav ms-auto">
+                        <a href="./contact.html#apply" class="nav-item nav-link">ЗАПИСАТЬСЯ</a>
+                    </div>
+                    <div class="navbar-nav ms-auto">
+                        <a href="./index.html#contact" class="nav-item nav-link">КОНТАКТЫ</a>
+                    </div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div id="route" class="scr3">
+		<div class="row">
+			<div class="col-lg-12 scr3-title"><b>МАРШРУТЫ</b></div>
+		</div>
+		<div id="map" class="map"></div>
+        <div class="route-select">
+            <select id='route-select' class='route-select'><span class="focus"></span></select>
+        </div>
+		<div class="row scr3-table-row">
+			<div class="col-lg-3 scr3-img-col">
+				<img src="images/route_1.png">
+			</div>
+			<div class="col-lg-9 scr3-text">
+				Пешая экскурсия по городу станет настоящим праздником для любителей театрального искусства и тех, кто стремится окунуться в его уникальную атмосферу. Ваш путь начнется в самом сердце Челябинска – на проспекте Ленина. В течение экскурсии вы познакомитесь с театральными традициями Челябинска, узнаете о режиссерах, актерах, художниках и мастерах театрального ремесла, которые создают волшебство на сценах города. Ваш гид с увлечением поделится историческими фактами, придающими городу особый колорит и уникальность в театральном мире.			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3"></div>
+			<div class="col-lg-9">
+				<div class="col-lg-7 scr3-button-col">
+					<a class="scr3-button" href="./contact.html#apply">Хочу сюда!</a>
+				</div>
+			</div>
+		</div>
+		<div class="row scr3-table-row">
+			<div class="col-lg-3 scr3-img-col">
+				<img src="images/route_2.png">
+			</div>
+			<div class="col-lg-9 scr3-text">
+				Приготовьтесь погрузиться в увлекательный мир экспонатов, арт-произведений и открытий, которые раскроют перед вами богатство и разнообразие культурного наследия Челябинска. Ваше приключение начнется в центре города, где располагается Челябиский государственный музей изобразительных искусств. Также Вы посетите Государственный исторический музей Южного Урала, Музей истории медицины, Музей Почтовой Связи и многие другие! Это незабываемое приключение подарит вам знания, вдохновение и прекрасные воспоминания о Челябинске.			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3"></div>
+			<div class="col-lg-9">
+				<div class="col-lg-7 scr3-button-col">
+					<a class="scr3-button" href="./contact.html#apply">Хочу сюда!</a>
+				</div>
+			</div>
+		</div>
+		<div class="row scr3-table-row">
+			<div class="col-lg-3 scr3-img-col">
+				<img src="images/route_3.png">
+			</div>
+			<div class="col-lg-9 scr3-text">
+				Ваше путешествие начнется с посещения Центрального парка культуры и отдыха, расположенного в самом центре города. Здесь вы сможете прогуляться по живописным аллеям, насладиться свежим воздухом соснового бора, познакомиться с различными видами птиц, совершите прогулку до Студенческого карьера. Посетите Городской сад им. А.С. Пушкина, парк Алое Поле. Пешая экскурсия по паркам Челябинска станет возможностью насладиться природой, узнать историю города и провести время в уютной атмосфере. Вы ощутите гармонию и спокойствие, наслаждаясь зеленью, цветами и свежим воздухом.			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3"></div>
+			<div class="col-lg-9">
+				<div class="col-lg-7 scr3-button-col">
+					<a class="scr3-button" href="./contact.html#apply">Хочу сюда!</a>
+				</div>
+			</div>
+		</div>
+		<div class="row scr3-table-row">
+			<div class="col-lg-3 scr3-img-col">
+				<img src="images/route_4.png">
+			</div>
+			<div class="col-lg-9 scr3-text">
+				Челябинск представляет собой симбиоз старины и современности, и его улицы хранят в себе множество интересных историй. Экскурсия начинается с исторического центра Челябинска. Вы прогуляетесь по улице Васенко, затем, по улице Кирова, улице Труда. Познакомитесь с объектами культурного наследия города, а гид поведает легенды старинных домов. Вы погрузитесь в историю, окружившись архитектурой, секретами и тайнами, и получите незабываемый опыт, который останется с вами надолго.			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3"></div>
+			<div class="col-lg-9">
+				<div class="col-lg-7 scr3-button-col">
+					<a class="scr3-button" href="./contact.html#apply">Хочу сюда!</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
